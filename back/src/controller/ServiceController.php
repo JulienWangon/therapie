@@ -10,7 +10,7 @@ class ServiceController {
 
     public function __construct(ServiceRepository $serviceRepository) {
 
-      $this->serviceRepository = $serviceRepository;
+        $this->serviceRepository = $serviceRepository;
     }
 
     public function listServices() {
@@ -29,7 +29,7 @@ class ServiceController {
 
         } catch (Exception $e) {
           
-            error_log($e->getMessage()); // Log de l'erreur pour débogage
+            error_log($e->getMessage());
             ResponseHelper::sendError('Erreur de récupération des services.', 500);
         }
     }
