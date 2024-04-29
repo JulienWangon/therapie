@@ -8,6 +8,9 @@ require_once __DIR__ . '/../src/repository/ServiceRepository.php';
 require_once __DIR__ . '/../src/controller/ContactInfoController.php';
 require_once __DIR__ . '/../src/repository/ContactInfoRepository.php';
 
+require_once __DIR__ . '/../src/controller/DiplomeController.php';
+require_once __DIR__ . '/../src/repository/DiplomeRepository.php';
+
 $router = new Router();
 
 $serviceRepository = new ServiceRepository();
@@ -16,9 +19,13 @@ $serviceController = new ServiceController($serviceRepository);
 $contactInfoRepository = new ContactInfoRepository();
 $contactInfoController = new ContactInfoController($contactInfoRepository);
 
+$diplomeRepository = new DiplomeRepository();
+$diplomeController = new DiplomeController($diplomeRepository);
+
 // Configuration des routes
 $router->addRoute('GET', '/api/services', [$serviceController, 'listServices']);
 $router->addRoute('GET', '/api/contact-info', [$contactInfoController, 'getContactInfo']);
+$router->addRoute('GET', '/api/diplomes', [$diplomeController, 'diplomesList']);
 
 // Dispatcher la requête
 $requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
