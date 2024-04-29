@@ -1,15 +1,24 @@
 <?php
 
 require_once __DIR__ . '/../src/Router/Router.php';
+
 require_once __DIR__ . '/../src/controller/ServiceController.php';
 require_once __DIR__ . '/../src/repository/ServiceRepository.php';
 
+require_once __DIR__ . '/../src/controller/ContactInfoController.php';
+require_once __DIR__ . '/../src/repository/ContactInfoRepository.php';
+
 $router = new Router();
+
 $serviceRepository = new ServiceRepository();
 $serviceController = new ServiceController($serviceRepository);
 
+$contactInfoRepository = new ContactInfoRepository();
+$contactInfoController = new ContactInfoController($contactInfoRepository);
+
 // Configuration des routes
 $router->addRoute('GET', '/api/services', [$serviceController, 'listServices']);
+$router->addRoute('GET', '/api/contact-info', [$contactInfoController, 'getContactInfo']);
 
 // Dispatcher la requête
 $requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
