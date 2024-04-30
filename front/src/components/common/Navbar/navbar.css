@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%; 
+  z-index: 2000;
+  background-color: transparent !important;
+}
+
+.navItem {
+  margin-bottom: 0.1em;
+}
+
+.offcanvas-title {
+  color: #5A1D3E;
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  font-family: "Pathway Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.navbar-nav:last-child {
+  border-bottom: 1px solid white;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid white;
+}
+
+.navItem:first-child {
+  border: none;
+}
+
+.navLink:hover {
+  color: white; /* Couleur des liens au survol (rouge) */
+}
+
+.navItem a {
+  text-decoration: none;
+  color: #5A1D3E;
+  font-size: 1.3rem;
+  font-family: "Pathway Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0.8rem;
+  transition: color 0.8s ease;
+}
+
+.offcanvas-body, .offcanvas-header, .canvas-footer {
+  background-color: #F6EDE8;
+}
+
+.offcanvas-header {
+  height: 5%;
+  justify-content: end;
+}
+
+.canvas-footer {
+  padding: 0.8em;
+}
+
+.cardNavbar {
+  width: fit-content;
+  height: fit-content;
+  background-color: #F6EDE8;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border: none;
+  margin-top: 1.5em;
+  padding: 0.8em;
+}
+
+.phoneInfo, .hoursInfo {
+  display: flex;
+  padding: 0.8em;
+}
+
+.phoneText, .hoursText {
+  display: flex;
+  flex-direction: column;
+  font-family: "Pathway Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
+  margin-left: 0.8em;
+  color: #5A1D3E;
+}
+
+.phoneIcone, .hoursIcone {
+  width: 10%;
+  display: flex;
+  justify-content: center; /* Centrage horizontal */
+  align-items: center;     /* Centrage vertical */
+
+}
+
+.fa-phone, .fa-clock {
+  color:#5A1D3E; 
+}
+
+
+.hoursInfo {
+  border-top: 1px solid white;
+}
