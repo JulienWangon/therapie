@@ -34,8 +34,12 @@
   border: none;
 }
 
+.navLink {
+  transition: color 0.3s ease; /* Effet de transition douce */
+}
+
 .navLink:hover {
-  color: white; /* Couleur des liens au survol (rouge) */
+  color: #13868C; /* Couleur des liens au survol (rouge) */
 }
 
 .navItem a {
