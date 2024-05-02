@@ -1,5 +1,6 @@
 .logoDiplomeWrapper {
   width: 100%;
+  text-align: center;
 }
 
 .logoLine1, .logoLine2 {
@@ -11,3 +12,5 @@
   width: 30vw;
   margin: 1em;
 }
+
+

@@ -31,7 +31,7 @@ const DiplomeSection = () => {
                 />
             ))}
         </ul> 
-        <p className="infoText">Je suis également en cours de spécialisation en thérapie brève systémique et stratégique à LACT, représentant Ecole de Palo Alto pour obtenir le diplôme de Systémicienne et clinitienne de la relation.</p>
+        <p className="infoText">Je suis également en cours de spécialisation en <strong>thérapie brève systémique et stratégique</strong> à LACT, représentant Ecole de Palo Alto pour obtenir le diplôme de <strong>Systémicienne et clinitienne de la relation</strong>.</p>
           <div className="logoDiplomeWrapper">
               <div className="logoLine1">
                   <img className="logo1" src={syprene} alt="université Paris 8"/>
@@ -40,8 +40,10 @@ const DiplomeSection = () => {
               <div className="logoLine1">
                   <img className="logo3" src={paris8} alt="université Paris 8"/>
                   <img className="logo4" src={lact} alt="systemic practice research network"/>
-              </div>        
-          </div>     
+              </div>
+              <button type="button" className="parcoursBtn">Mon parcours <i class="fas fa-arrow-right"></i></button>        
+          </div>
+               
       </>
 
 
