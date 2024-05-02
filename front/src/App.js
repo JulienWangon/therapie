@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 
 import { ContactInfoProvider } from './context/ContactInfoContext';
+import { DiplomesProvider } from './context/DiplomesContext';
 
 import Home from './pages/Home/Home';
 import MonParcours from './pages/MonParcours/MonParcours';
@@ -18,7 +19,9 @@ function App() {
                 <Route index element={<Home />} />
                 <Route path="/accueil" element={
                     <ContactInfoProvider>
-                        <Home />
+                        <DiplomesProvider>
+                            <Home />
+                        </DiplomesProvider>           
                     </ContactInfoProvider>
                 } />
                 
