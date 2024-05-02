@@ -30,7 +30,7 @@ const Navbar = () => {
                   <span className="navbar-toggler-icon"></span>
               </button>
 
-              <div className="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div className="offcanvas offcanvas-start" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 
                   <div className="offcanvas-header">
                      
@@ -61,7 +61,7 @@ const Navbar = () => {
                       <div className="infoContainer">
                           <div className="phoneInfo">
                               <div className="phoneIcone">
-                                  <i class="fa fa-3x fa-phone"></i>
+                                  <i className="fa fa-3x fa-phone"></i>
                               </div>       
                               <div className="phoneText">
                                   <span>Tel</span>
@@ -70,7 +70,7 @@ const Navbar = () => {
                           </div>
                           <div className="hoursInfo">
                               <div className="hoursIcone">
-                              <i class="fa fa-3x fa-clock"></i>
+                              <i className="fa fa-3x fa-clock"></i>
                               </div>       
                               <div className="hoursText">
                                   <span>Horaires</span>
