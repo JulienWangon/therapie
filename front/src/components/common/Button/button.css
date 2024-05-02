@@ -25,8 +25,8 @@
 }
 
 .whiteBtn {
-  border: 2px solid #f5f5dc;
-  color: #f5f5dc;
+  border: 2px solid white;
+  color: white;
 }
 
 .purpleBtn::after, .whiteBtn::after {
@@ -63,7 +63,7 @@
 
 
 .purpleBtn:hover::after {
-  background: #f5f5dc;
+  background: white;
   color: #5A1D3E;
 }
 
