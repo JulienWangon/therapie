@@ -3,6 +3,7 @@ import './App.css';
 
 import { ContactInfoProvider } from './context/ContactInfoContext';
 import { DiplomesProvider } from './context/DiplomesContext';
+import { ServicesProvider } from './context/ServicesContext';
 
 import Home from './pages/Home/Home';
 import MonParcours from './pages/MonParcours/MonParcours';
@@ -20,7 +21,9 @@ function App() {
                 <Route path="/accueil" element={
                     <ContactInfoProvider>
                         <DiplomesProvider>
-                            <Home />
+                            <ServicesProvider>
+                                <Home />
+                            </ServicesProvider> 
                         </DiplomesProvider>           
                     </ContactInfoProvider>
                 } />
