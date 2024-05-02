@@ -2,8 +2,18 @@ import React from 'react';
 
 import './home.css';
 
+import logo1 from '../../assets/img/logo1.webp';
+import logo2 from '../../assets/img/logo2.webp';
+import logo3 from '../../assets/img/logo3.webp';
+import logo4 from '../../assets/img/logo4.webp';
+import marine from '../../assets/img/marine.webp';
+
+
 import Navbar from '../../components/common/Navbar/Navbar';
 import Header from '../../components/common/Header/Header';
+import InfoCard from '../../components/InfoCard/InfoCard';
+import SocialMedia from '../../components/common/SocialMedia/SocialMedia';
+import DiplomeSection from '../../components/Diplomes/DiplomeSection/DiplomeSection';
 
 
 const Home = () => {
@@ -61,8 +71,49 @@ const Home = () => {
             <section className="secondSection">
                 <div className="topSecondSection">
                     <h2 className="h2SecondSection">Un accompagnement pour créer le changement et retrouver votre autonomie.</h2>
+                    <div className="infoCardWrapper">
+                        <InfoCard imageSrc={logo1} alt='à définir' primaryText='Séance individuelle'/>
+                        <InfoCard imageSrc={logo2} alt='à définir' primaryText='Thérapie de couple'/>
+                        <InfoCard imageSrc={logo3} alt=" à définir" primaryText='Thérapie familiale' secondaryText='Soutien à la parentalité'/>
+                        <InfoCard imageSrc={logo4} alt=" à définir" primaryText='Ateliers collectifs'/>
+                    </div>
+                    <div className="textInfoCard">
+                        <p>
+                            La thérapie brève se déroule généralement en <strong>10 séances par problématique</strong>.
+                            La <strong>durée des séances</strong> peut varier <strong>de 1h à 2h</strong> et elles s’effectuent <strong>une à deux fois par mois</strong> en fonction des besoins.
+                        </p>
+                        <p>
+                            Les ateliers collectifs en <strong>constellations familiales</strong> et systémiques ont lieu <strong>trimestriellement</strong>. 
+                        </p>
+                        <p>
+                            Quelque soit votre besoin, vous pouvez me contacter initialement par téléphone :
+                            j’effectue régulièrement des permanences téléphoniques.
+                        </p>
+
+                        <button type="button" className="rdvBtn">Prendre rendez-vous</button>
+                    </div>
+
                 </div>
+                <img className="portrait" src={marine} alt="portrait de Mme Ottaviani Marine"/>
                 <div className="bottomSecondSection">
+                    <div className="textPhotoWrapper">
+                        <p>
+                            Je suis psychopraticienne et je vous accompagne dans un cadre confidentiel et bienveillant. 
+                        </p>
+                        <p>
+                            En créant un espace d'écoute et de parole sécurisant, je vous aide à explorer vos  émotions, 
+                            à comprendre vos comportements et à trouver vos propres  solutions pour surmonter vos difficultés.
+                        </p>
+                        <p>
+                            Je suis également sage-femme et c'est tout naturellement que mon activité professionnelle a évolué vers le domaine de la santé mentale et du bien-être.
+                        </p>
+                        <p>
+                            Je suis donc plus spécialisée dans tout ce qui touche à la femme, au couple, aux relations amoureuses, 
+                            à la famille, à la grossesse, à la naissance d'un enfant, à son éducation, au "métier" de parent(s).
+                        </p>
+                    </div>
+                    <SocialMedia className="socialBody"/>
+                    <DiplomeSection/>
 
                 </div>
             </section>
