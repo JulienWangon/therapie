@@ -98,18 +98,18 @@ const Home = () => {
                 <div className="bottomSecondSection">
                     <div className="textPhotoWrapper">
                         <p>
-                            Je suis psychopraticienne et je vous accompagne dans un cadre confidentiel et bienveillant. 
+                            Je suis <strong>psychopraticienne</strong> et je vous accompagne dans un cadre <strong>confidentiel</strong> et <strong>bienveillant</strong>. 
                         </p>
                         <p>
                             En créant un espace d'écoute et de parole sécurisant, je vous aide à explorer vos  émotions, 
-                            à comprendre vos comportements et à trouver vos propres  solutions pour surmonter vos difficultés.
+                            à comprendre vos comportements et à <strong>trouver vos propres solutions</strong> pour <strong>surmonter vos difficultés</strong>.
                         </p>
                         <p>
                             Je suis également sage-femme et c'est tout naturellement que mon activité professionnelle a évolué vers le domaine de la santé mentale et du bien-être.
                         </p>
                         <p>
-                            Je suis donc plus spécialisée dans tout ce qui touche à la femme, au couple, aux relations amoureuses, 
-                            à la famille, à la grossesse, à la naissance d'un enfant, à son éducation, au "métier" de parent(s).
+                            Je suis donc plus spécialisée dans tout ce qui touche à la <strong>femme</strong>, au <strong>couple</strong>, aux <strong>relations amoureuses</strong>, 
+                            à la <strong>famille</strong>, à la <strong>grossesse</strong>, à la <strong>naissance d'un enfant</strong>, à son <strong>éducation</strong>, au "métier" de parent(s).
                         </p>
                     </div>
                     <SocialMedia className="socialBody"/>
