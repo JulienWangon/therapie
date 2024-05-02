@@ -1,10 +1,13 @@
 import React from 'react';
 
+import Navbar from '../../components/common/Navbar/Navbar';
+import Header from '../../components/common/Header/Header';
 const Home = () => {
   return (
-    <div>
-       Ici page HOME
-    </div>
+    <>
+        <Navbar/>
+        <Header/>
+    </>
   );
 };
 
