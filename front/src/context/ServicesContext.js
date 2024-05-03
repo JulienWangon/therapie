@@ -6,10 +6,10 @@ const ServicesContext = createContext();
 
 export const ServicesProvider = ({ children }) => {
 
-    const { diplomes, isLoading, error } = useFetchServices();
+    const { services, isLoading, error } = useFetchServices();
 
     return (
-        <ServicesContext.Provider value={{diplomes, isLoading, error}}>
+        <ServicesContext.Provider value={{services, isLoading, error}}>
             {children}
         </ServicesContext.Provider>
 
