@@ -41,7 +41,7 @@ const DiplomeSection = () => {
                   <img className="logo3" src={paris8} alt="université Paris 8"/>
                   <img className="logo4" src={lact} alt="systemic practice research network"/>
               </div>
-              <button type="button" className="parcoursBtn">Mon parcours <i class="fas fa-arrow-right"></i></button>        
+              <button type="button" className="parcoursBtn">Mon parcours <i className="fas fa-arrow-right"></i></button>        
           </div>
                
       </>
