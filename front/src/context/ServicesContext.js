@@ -4,7 +4,7 @@ import useFetchServices from "../components/Services/hook/useFetchServices";
 
 const ServicesContext = createContext();
 
-export const DiplomesProvider = ({ children }) => {
+export const ServicesProvider = ({ children }) => {
 
     const { diplomes, isLoading, error } = useFetchServices();
 
