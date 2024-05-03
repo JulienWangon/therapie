@@ -7,10 +7,12 @@ require_once __DIR__ . '/../class/ResponseHelper.php';
 class ServiceController {
 
     private $serviceRepository;
+    private $baseUrl;
 
     public function __construct(ServiceRepository $serviceRepository) {
 
         $this->serviceRepository = $serviceRepository;
+        $this->baseUrl = $_ENV['BASE_URL'] ?? $_SERVER['BASE_URL']; 
     }
 
     public function listServices() {
@@ -18,10 +20,14 @@ class ServiceController {
         try {
             $services = $this->serviceRepository->findAll();
             $formattedServices = array_map(function ($service) {
+                error_log('Base URL: ' . $this->baseUrl);
+            error_log('Image Path: ' . $service->getPathImg());
+                $fullImagePath = $this->baseUrl . $service->getPathImg();
+                error_log('Full Image Path: ' . $fullImagePath); // Vérifiez ce log
                 return [
                     'id' => $service->getId(),
                     'name' => $service->getName(),  
-                    'path' => $service->getPathImg()
+                    'path' => $fullImagePath
                 ];
             }, $services);
             
