@@ -13,7 +13,7 @@ const useFetchServices = () => {
 
           try {
               const response = await fetchServices(); 
-                setServices(response);          
+                setServices(response);     
           } catch (error) {
               setError(error.message)
           } finally {
