@@ -14,6 +14,7 @@ import Header from '../../components/common/Header/Header';
 import InfoCard from '../../components/InfoCard/InfoCard';
 import SocialMedia from '../../components/common/SocialMedia/SocialMedia';
 import DiplomeSection from '../../components/Diplomes/DiplomeSection/DiplomeSection';
+import SectionServices from '../../components/Services/SectionServices/SectionServices';
 
 
 const Home = () => {
@@ -114,6 +115,7 @@ const Home = () => {
                     </div>
                     <SocialMedia className="socialBody"/>
                     <DiplomeSection/>
+                    <SectionServices/>
 
                 </div>
             </section>
