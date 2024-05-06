@@ -157,7 +157,6 @@ blockquote {margin: 0;}
   flex-direction: column;
   align-items: center;
   position: relative;
-  position: relative;
   height: 1997.23px;
 
 }
@@ -172,19 +171,6 @@ blockquote {margin: 0;}
   width: 100vw;
   height: 50%;
   background-color: #F6EDE8;
-}
-
-.portrait {
-  border-radius: 50%;
-  border: 2px solid green;
-  width: 10rem;
-}
-
-.portrait {
-  position: absolute; 
-  top: 50%;
-  transform: translateY(-50%); 
-  z-index: 10; 
 }
 
 h2 {
@@ -237,9 +223,6 @@ h2 {
   border-radius: 50%;
   border: 2px solid green;
   width: 10rem;
-}
-
-.portrait {
   position: absolute; 
   top: 50%; 
   transform: translateY(-50%); 
@@ -262,4 +245,30 @@ h2 {
   margin-top: 2em;
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
+}
+
+/* TROISIÈME SECTION */
+.thirdSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  margin-top: 25em;
+}
+
+.serviceText {
+  color: #571d3e;
+  text-align: center;
+  padding: 0.8em;
+  margin-top: 0.5em;
+}
+
+.planteImg {
+  width: 100vw;
+}
+
+.rdvBtn {
+  color: white;
+  margin-bottom: 2em;
 }

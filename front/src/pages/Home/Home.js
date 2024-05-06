@@ -7,6 +7,7 @@ import logo2 from '../../assets/img/logo2.webp';
 import logo3 from '../../assets/img/logo3.webp';
 import logo4 from '../../assets/img/logo4.webp';
 import marine from '../../assets/img/marine.webp';
+import plante from '../../assets/img/plante.webp';
 
 
 import Navbar from '../../components/common/Navbar/Navbar';
@@ -95,7 +96,9 @@ const Home = () => {
                     </div>
 
                 </div>
-                <img className="portrait" src={marine} alt="portrait de Mme Ottaviani Marine"/>
+                
+                    <img className="portrait" src={marine} alt="portrait de Mme Ottaviani Marine"/>
+ 
                 <div className="bottomSecondSection">
                     <div className="textPhotoWrapper">
                         <p>
@@ -115,9 +118,24 @@ const Home = () => {
                     </div>
                     <SocialMedia className="socialBody"/>
                     <DiplomeSection/>
-                    <SectionServices/>
-
                 </div>
+            </section>
+            <section className="thirdSection">
+                <h2>Oser le changement, révélez votre potentiel</h2>
+                <p className="serviceText">Un voyage de transformation à travers:</p>
+                <SectionServices/>
+               <p className="serviceText">Grâce à ces diffèrentes <strong>méthodes thérapeutiques</strong>, nous découvrons ensemble ce qui bloque ou freine l'atteinte de <strong>vos objectifs</strong> ou de <strong>votre épanouissement</strong></p>
+               <p className="serviceText">Dans le respect de votre rythme et de vos intentions, je vous aide à faire naître la version de vous-même qui vous convient, l'être qui vous habite, vos projets, ce qui vous tient à coeur, le parent que vous êtes, l'amant(e) qui sommeille en vous, les relations harmonieuses que vous souhaitez vivre.</p>
+
+               <div className="planteWrapper">
+                    <img className="planteImg" src={plante} alt="plantation plante"/>
+                    <div className="planteText">
+                        <p className="serviceText">Je suis également sage-femme et c'est tout naturellement que mon activité professionnelle à évolué vers le domaine de la santé mentale et du bien-être.</p>
+                        <p className="serviceText">Je suis donc plus spécialisée dans tout ce qui touche à la <strong>femme</strong>, au <strong>couple</strong>, aux <strong>relations amoureuses</strong>, à la <strong>famille</strong>, à la <strong>grossesse</strong>, à la <strong>naissance</strong> d'un enfant, à son <strong>éducation</strong>, au "métier" de <strong>parent(s)</strong>.</p>
+                     </div>
+               </div>
+
+               <button className="rdvBtn" type="button">Prendre rendez-vous <i className="fas fa-arrow-right"></i></button>
             </section>
 
 
