@@ -4,12 +4,15 @@ import './footer.css';
 import Button from '../Button/Button';
 import Modal from '../Modal/Modal';
 import ContactForm from '../../Contact/ContactForm/ContactForm';
+import Cookie from '../../Cookie/Cookie';
 
 
 const Footer = () => {
 
   const [isModalOpen, setModalOpen] = useState(false);
+  const [isCookieModalOpen, setCookieModalOpen] = useState(false);
 
+  const toggleCookieModal = () => setCookieModalOpen(!isCookieModalOpen);
   const toggleModal = () => setModalOpen(!isModalOpen);
 
   return (
@@ -77,15 +80,16 @@ const Footer = () => {
         </div>
    
         <div className="bottomFooter">
-          <span className="mentionsLegales"><a className="legale" href="#">Mentions légales</a></span>
-          <span className="cgv"><a className="legale" href="#">Conditon générales de vente</a></span>
-          <span className="cookie"><a className="legale" href="#">Données personnelles et cookies</a></span>
-        </div>
-        <div className="copyRight">
-          <span className="copyrightText">Copyright @2024 Julio Tous droits réservés</span>
-        </div>
-
-      
+            <span className="mentionsLegales"><a className="legale" href="#">Mentions légales</a></span>
+            <span className="cgv"><a className="legale" href="#">Conditon générales de vente</a></span>
+            <span className="cookie"> <button className="cookieBtn" onClick={toggleCookieModal}>Données personnelles et cookies</button></span>
+            <Modal isOpen={isCookieModalOpen} onClose={toggleCookieModal}>
+                <Cookie />
+            </Modal>
+          </div>
+          <div className="copyRight">
+            <span className="copyrightText">Copyright @2024 Julio Tous droits réservés</span>
+          </div>      
     </footer>
   );
 };
