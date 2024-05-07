@@ -37,7 +37,6 @@ const Home = () => {
     useEffect(() => {
         const loadTrustmaryScript = () => {
             if (scriptLoaded) {
-                console.log('Script already loaded');
                 return;
             }
     
@@ -49,8 +48,6 @@ const Home = () => {
             if (section) {
                 section.appendChild(script);
                 setScriptLoaded(true);
-            } else {
-                console.error('Element #trustmary-section not found in the DOM');
             }
         };
     
