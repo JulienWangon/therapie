@@ -61,7 +61,7 @@ const Navbar = () => {
                       <div className="infoContainer">
                           <div className="phoneInfo">
                               <div className="phoneIcone">
-                                  <i className="fa fa-3x fa-phone"></i>
+                                  <i className="fa fa-2x fa-phone"></i>
                               </div>       
                               <div className="phoneText">
                                   <span>Tel</span>
@@ -70,7 +70,7 @@ const Navbar = () => {
                           </div>
                           <div className="hoursInfo">
                               <div className="hoursIcone">
-                              <i className="fa fa-3x fa-clock"></i>
+                              <i className="fa fa-2x fa-clock"></i>
                               </div>       
                               <div className="hoursText">
                                   <span>Horaires</span>

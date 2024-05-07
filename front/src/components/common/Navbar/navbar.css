@@ -91,13 +91,13 @@
   font-family: "Pathway Gothic One", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin-left: 0.8em;
   color: #5A1D3E;
 }
 
 .phoneIcone, .hoursIcone {
-  width: 10%;
+  width: 8%;
   display: flex;
   justify-content: center; /* Centrage horizontal */
   align-items: center;     /* Centrage vertical */
