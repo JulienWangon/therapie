@@ -23,6 +23,7 @@ import SectionServices from '../../components/Services/SectionServices/SectionSe
 import Button from '../../components/common/Button/Button';
 import Modal from '../../components/common/Modal/Modal';
 import ContactForm from '../../components/Contact/ContactForm/ContactForm';
+import Footer from '../../components/common/Footer/Footer';
 
 
 
@@ -125,7 +126,7 @@ const Home = () => {
                         <InfoCard imageSrc={logo3} alt=" à définir" primaryText='Thérapie familiale' secondaryText='Soutien à la parentalité'/>
                         <InfoCard imageSrc={logo4} alt=" à définir" primaryText='Ateliers collectifs'/>
                     </div>
-                    
+
                     <div className="textInfoCard">
                         <p>
                             La thérapie brève se déroule généralement en <strong>10 séances par problématique</strong>.
@@ -228,14 +229,9 @@ const Home = () => {
                 <p className="ethiqueText">Mon accompagnement ne se substitue pas à un suivi médical et toute gestion d’un éventuel traitement médicamenteux ne rentre pas dans ma zone de responsabilité. </p>
                 <p className="ethiqueText">Je soumets ma pratique à une supervision régulière de mon travail à des superviseurs expérimentés. Cette supervision m’est indispensable selon moi et elle m’aide à être dans une relation thérapeutique saine, pour mieux accompagner mes consultants selon leur problèmatique et les résonnances chez moi.</p>
                 <p className="ethiqueText">Je m’engage également à une formation continue en participant fréquemment à des stages, des séminaires, des ateliers et des perfectionnements professionnels.</p>
-            </section>
-
-
-
-
-
-          
+            </section>          
         </main>
+        <Footer/>
     </>
   );
 };
