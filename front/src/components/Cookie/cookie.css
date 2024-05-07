@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Chivo:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+.cookieWrapper {
+  width: 80vw;
+}
+
+.cookieTitle {
+  font-size: 1rem;
+  color: #571d3e;
+  font-family: "Open Sans", sans-serif;
+}
+
+.cookieText {
+  font-size: 0.9rem;
+  color: #571d3e;
+  font-family: "Open Sans", sans-serif;
+}
+
+.contentCookie {
+  margin-top: 2em;
+}
+
+.conclusionCookie {
+  font-weight: 600;
+}
