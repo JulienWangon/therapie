@@ -268,7 +268,89 @@ h2 {
   width: 100vw;
 }
 
+/*QUATRIEME SECTION*/
 .rdvBtn {
   color: white;
   margin-bottom: 2em;
+}
+
+.tarifText {
+  color: #571d3e;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+}
+
+.tarifExplication {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  color:#571d3a;
+  font-size: 0.9rem;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.asterix {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  padding: 1.2em;
+  color:#571d3a;
+}
+
+.neovieTitle {
+  font-family: "Averia Libre", system-ui;
+  font-size: 1.2rem;
+}
+
+.neovieLogo {
+  margin-top: 1.5em;
+  width: 70vw;
+}
+
+.impotWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+  
+  width: 95vw;
+}
+.impotCheque {
+  width: 20%;
+  height: 20%;
+ 
+}
+
+.impotText {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.6rem;
+  color: #5A1D3E;
+  padding: em;
+  text-align: center;
+  margin: auto;
+}
+
+.avisTitle {
+  margin-top: 3em;
+}
+
+.avisSection {
+  margin-top: 2em;;
+}
+
+.ethiqueSection {
+  background-color: #F6EDE8;
+}
+
+.ethiqueImg {
+  width: 100vw;
+  margin-bottom: 1em;
+}
+
+.ethiqueText {
+  color: #571d3e;
+  font-family: "Open Sans", sans-serif;
+  padding: 0.5em;
+  font-size: 0.9rem;
+  text-align: center;
 }

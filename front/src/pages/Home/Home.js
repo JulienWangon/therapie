@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 import './home.css';
 
@@ -8,6 +8,10 @@ import logo3 from '../../assets/img/logo3.webp';
 import logo4 from '../../assets/img/logo4.webp';
 import marine from '../../assets/img/marine.webp';
 import plante from '../../assets/img/plante.webp';
+import neovie from '../../assets/img/neovie.webp';
+import impot from '../../assets/img/impot.webp';
+import cheque from '../../assets/img/cheque.webp';
+import ethique from '../../assets/img/ethique.webp';
 
 
 import Navbar from '../../components/common/Navbar/Navbar';
@@ -16,9 +20,46 @@ import InfoCard from '../../components/InfoCard/InfoCard';
 import SocialMedia from '../../components/common/SocialMedia/SocialMedia';
 import DiplomeSection from '../../components/Diplomes/DiplomeSection/DiplomeSection';
 import SectionServices from '../../components/Services/SectionServices/SectionServices';
+import Button from '../../components/common/Button/Button';
+
 
 
 const Home = () => {
+
+    const trustmaryRef = useRef(null);
+    const [scriptLoaded, setScriptLoaded] = useState(false);
+
+    useEffect(() => {
+        const loadTrustmaryScript = () => {
+            if (scriptLoaded) {
+                console.log('Script already loaded');
+                return;
+            }
+    
+            const script = document.createElement('script');
+            script.src = 'https://widget.trustmary.com/ZdV7jyb08';
+            script.async = true;
+    
+            const section = trustmaryRef.current;
+            if (section) {
+                section.appendChild(script);
+                setScriptLoaded(true);
+            } else {
+                console.error('Element #trustmary-section not found in the DOM');
+            }
+        };
+    
+        if (document.readyState === 'complete') {
+            loadTrustmaryScript();
+        } else {
+            window.addEventListener('load', loadTrustmaryScript);
+        }
+    
+        return () => {
+            window.removeEventListener('load', loadTrustmaryScript);
+        };
+    }, [scriptLoaded]);
+    
   return (
     <>
         <Navbar/>
@@ -96,7 +137,7 @@ const Home = () => {
                     </div>
 
                 </div>
-                
+
                     <img className="portrait" src={marine} alt="portrait de Mme Ottaviani Marine"/>
  
                 <div className="bottomSecondSection">
@@ -130,12 +171,44 @@ const Home = () => {
                <div className="planteWrapper">
                     <img className="planteImg" src={plante} alt="plantation plante"/>
                     <div className="planteText">
-                        <p className="serviceText">Je suis également sage-femme et c'est tout naturellement que mon activité professionnelle à évolué vers le domaine de la santé mentale et du bien-être.</p>
+                        <p className="serviceText">Je suis également <strong>sage-femme</strong> et c'est tout naturellement que mon activité professionnelle à évolué vers le domaine de la <strong>santé mentale</strong> et du <strong>bien-être</strong>.</p>
                         <p className="serviceText">Je suis donc plus spécialisée dans tout ce qui touche à la <strong>femme</strong>, au <strong>couple</strong>, aux <strong>relations amoureuses</strong>, à la <strong>famille</strong>, à la <strong>grossesse</strong>, à la <strong>naissance</strong> d'un enfant, à son <strong>éducation</strong>, au "métier" de <strong>parent(s)</strong>.</p>
                      </div>
                </div>
 
                <button className="rdvBtn" type="button">Prendre rendez-vous <i className="fas fa-arrow-right"></i></button>
+            </section>
+            <section className="fourSection">
+                <h2>Tarifs*</h2>
+                <p className="tarifText">Séance  individuelle: 60€ à 100€ la séance.</p>
+                <p className="tarifText">Séance de couple ou en famille: 100€ la séance.</p>
+                <p className="tarifExplication">La durée des séances peut varier de 1h à 2h et elles s’effectuent une à deux fois par mois en fonction des besoins. </p>
+                <p className="tarifExplication">La thérapie brève se fait généralement sur une moyenne de 10 séances par problématique</p>
+                <Button colorStyle="purpleBtn" text="Contact"/>
+                <p className="tarifExplication">Merci de prévenir le plus tôt possible d'un changement ou d'une annulation. Tout rendez-vous non honoré et non justifié moins de 48 heures en avance sera dû.</p>
+                <p className="asterix">* La prestation délivrée par ce professionnel ne fait pas l'objet d'un conventionnement. Dès lors, elle n'est pas prise en charge par la sécurité sociale. Certaines mutuelles peuvent rembourser ses services, vous pouvez lui demander une facture. Le montant des honoraires fixé est cependant déterminé avec tact et mesure.</p>
+                <span className="neovieTitle">Retrouve moi aussi sur </span>
+                <img className="neovieLogo" src={neovie} alt="logo neovie"/>
+                <div className="impotWrapper">
+                    <img className="impotCheque" src={impot} alt="logo crédit d'impot"/>
+                    <p className="impotText">Réglement possible par chèque emploi service universel CESU et crédit d'impôts accessible</p>
+                    <img className="impotCheque" src={cheque} alt="logo cheque emploi service"/>
+                </div>
+            </section>
+            <section className="avisSection">
+                <h2 className="avisTitle">Quand le changement prend racine: vos témoignages sont précieux</h2> 
+                <div ref={trustmaryRef} id="trustmary-section">           
+               </div>
+            </section>
+            <section className="ethiqueSection">
+                <h2>Ethique professionnelle</h2>
+                <p className="ethiqueText">En conformité avec le code de déontologie de la FF2P (Fédération Française de Psychanalyse et de Psychothérapie) à laquelle je suis adhérente , je m’engage à respecter le <strong>secret professionnel</strong> et la <strong>confidentialité</strong> de nos échanges.</p>
+                <img className="ethiqueImg" src={ethique} alt="livre avec un cadenas"/>
+                <p className="ethiqueText">Je m’autorise à déroger à cette règle avec votre accord en cas de danger possible pour vous, dans le cadre d’éventuelles violences que vous subiriez ou si vos difficultés sont en dehors de mon champ de compétences.</p>
+                <p className="ethiqueText">Les données transmises ne sont utilisées qu’à visée d’orientation et réduites au strict nécessaire.</p>
+                <p className="ethiqueText">Mon accompagnement ne se substitue pas à un suivi médical et toute gestion d’un éventuel traitement médicamenteux ne rentre pas dans ma zone de responsabilité. </p>
+                <p className="ethiqueText">Je soumets ma pratique à une supervision régulière de mon travail à des superviseurs expérimentés. Cette supervision m’est indispensable selon moi et elle m’aide à être dans une relation thérapeutique saine, pour mieux accompagner mes consultants selon leur problèmatique et les résonnances chez moi.</p>
+                <p className="ethiqueText">Je m’engage également à une formation continue en participant fréquemment à des stages, des séminaires, des ateliers et des perfectionnements professionnels.</p>
             </section>
 
 
