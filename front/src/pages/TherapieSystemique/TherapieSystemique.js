@@ -1,10 +1,11 @@
 import React from 'react';
+import Navbar from '../../components/common/Navbar/Navbar';
 
 const TherapieSystemique = () => {
   return (
-    <div>
-        Ici Page THERAPIE SYSTEMIQUE
-    </div>
+    <>
+       <Navbar/> 
+    </>
   );
 };
 

@@ -1,9 +1,10 @@
 import React from 'react';
+import Navbar from '../../components/common/Navbar/Navbar';
 
 const ConstellationsFamiliales = () => {
   return (
     <div>
-        Ici page des CONSTELLATIONS FAMILIALES
+        <Navbar/>
     </div>
   );
 };

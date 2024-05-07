@@ -1,10 +1,11 @@
 import React from 'react';
+import Navbar from '../../components/common/Navbar/Navbar';
 
 const PsychoCorporelle = () => {
   return (
-    <div>
-        Ici page PSYCHO CORPORELLE
-    </div>
+    <>
+        <Navbar/>
+    </>
   );
 };
 

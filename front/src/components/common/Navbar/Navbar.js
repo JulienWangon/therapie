@@ -13,7 +13,7 @@ const Navbar = () => {
         { text: "MON PARCOURS", url: "/mon-parcours" },
         { text: "THERAPIE SYSTEMIQUE", url: "/therapie-systemique" },
         { text:"CONSTELLATIONS FAMILIALES", url:"/constellations-familiales"},
-        { text: "PSYCHOCORPORELLE", url: "/psychocorporelle" },
+        { text: "PSYCHOCORPORELLE", url: "/therapie-psychocorporelle" },
     ];
     
     const handleNavigate = (url) => {

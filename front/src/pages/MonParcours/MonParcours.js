@@ -1,10 +1,11 @@
 import React from 'react';
+import Navbar from '../../components/common/Navbar/Navbar';
 
 const MonParcours = () => {
   return (
-    <div>
-        Ici page MON PARCOURS
-    </div>
+    <>
+        <Navbar/>
+    </>
   );
 };
 
