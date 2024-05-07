@@ -21,6 +21,8 @@ import SocialMedia from '../../components/common/SocialMedia/SocialMedia';
 import DiplomeSection from '../../components/Diplomes/DiplomeSection/DiplomeSection';
 import SectionServices from '../../components/Services/SectionServices/SectionServices';
 import Button from '../../components/common/Button/Button';
+import Modal from '../../components/common/Modal/Modal';
+import ContactForm from '../../components/Contact/ContactForm/ContactForm';
 
 
 
@@ -28,6 +30,8 @@ const Home = () => {
 
     const trustmaryRef = useRef(null);
     const [scriptLoaded, setScriptLoaded] = useState(false);
+    const [isModalOpen, setModalOpen] = useState(false);
+    const toggleModal = () => setModalOpen(!isModalOpen);
 
     useEffect(() => {
         const loadTrustmaryScript = () => {
@@ -114,12 +118,14 @@ const Home = () => {
             <section className="secondSection">
                 <div className="topSecondSection">
                     <h2 className="h2SecondSection">Un accompagnement pour créer le changement et retrouver votre autonomie.</h2>
+
                     <div className="infoCardWrapper">
                         <InfoCard imageSrc={logo1} alt='à définir' primaryText='Séance individuelle'/>
                         <InfoCard imageSrc={logo2} alt='à définir' primaryText='Thérapie de couple'/>
                         <InfoCard imageSrc={logo3} alt=" à définir" primaryText='Thérapie familiale' secondaryText='Soutien à la parentalité'/>
                         <InfoCard imageSrc={logo4} alt=" à définir" primaryText='Ateliers collectifs'/>
                     </div>
+                    
                     <div className="textInfoCard">
                         <p>
                             La thérapie brève se déroule généralement en <strong>10 séances par problématique</strong>.
@@ -163,8 +169,11 @@ const Home = () => {
             </section>
             <section className="thirdSection">
                 <h2>Oser le changement, révélez votre potentiel</h2>
+
                 <p className="serviceText">Un voyage de transformation à travers:</p>
+
                 <SectionServices/>
+
                <p className="serviceText">Grâce à ces diffèrentes <strong>méthodes thérapeutiques</strong>, nous découvrons ensemble ce qui bloque ou freine l'atteinte de <strong>vos objectifs</strong> ou de <strong>votre épanouissement</strong></p>
                <p className="serviceText">Dans le respect de votre rythme et de vos intentions, je vous aide à faire naître la version de vous-même qui vous convient, l'être qui vous habite, vos projets, ce qui vous tient à coeur, le parent que vous êtes, l'amant(e) qui sommeille en vous, les relations harmonieuses que vous souhaitez vivre.</p>
 
@@ -180,15 +189,22 @@ const Home = () => {
             </section>
             <section className="fourSection">
                 <h2>Tarifs*</h2>
+
                 <p className="tarifText">Séance  individuelle: 60€ à 100€ la séance.</p>
                 <p className="tarifText">Séance de couple ou en famille: 100€ la séance.</p>
                 <p className="tarifExplication">La durée des séances peut varier de 1h à 2h et elles s’effectuent une à deux fois par mois en fonction des besoins. </p>
                 <p className="tarifExplication">La thérapie brève se fait généralement sur une moyenne de 10 séances par problématique</p>
-                <Button colorStyle="purpleBtn" text="Contact"/>
+
+                <Button colorStyle="purpleBtn" text="Contact" onClick={toggleModal} />
+                <Modal isOpen={isModalOpen} onClose={toggleModal}>
+                    <ContactForm />
+                </Modal>
+
                 <p className="tarifExplication">Merci de prévenir le plus tôt possible d'un changement ou d'une annulation. Tout rendez-vous non honoré et non justifié moins de 48 heures en avance sera dû.</p>
                 <p className="asterix">* La prestation délivrée par ce professionnel ne fait pas l'objet d'un conventionnement. Dès lors, elle n'est pas prise en charge par la sécurité sociale. Certaines mutuelles peuvent rembourser ses services, vous pouvez lui demander une facture. Le montant des honoraires fixé est cependant déterminé avec tact et mesure.</p>
                 <span className="neovieTitle">Retrouve moi aussi sur </span>
                 <img className="neovieLogo" src={neovie} alt="logo neovie"/>
+
                 <div className="impotWrapper">
                     <img className="impotCheque" src={impot} alt="logo crédit d'impot"/>
                     <p className="impotText">Réglement possible par chèque emploi service universel CESU et crédit d'impôts accessible</p>
@@ -202,8 +218,11 @@ const Home = () => {
             </section>
             <section className="ethiqueSection">
                 <h2>Ethique professionnelle</h2>
+
                 <p className="ethiqueText">En conformité avec le code de déontologie de la FF2P (Fédération Française de Psychanalyse et de Psychothérapie) à laquelle je suis adhérente , je m’engage à respecter le <strong>secret professionnel</strong> et la <strong>confidentialité</strong> de nos échanges.</p>
+               
                 <img className="ethiqueImg" src={ethique} alt="livre avec un cadenas"/>
+
                 <p className="ethiqueText">Je m’autorise à déroger à cette règle avec votre accord en cas de danger possible pour vous, dans le cadre d’éventuelles violences que vous subiriez ou si vos difficultés sont en dehors de mon champ de compétences.</p>
                 <p className="ethiqueText">Les données transmises ne sont utilisées qu’à visée d’orientation et réduites au strict nécessaire.</p>
                 <p className="ethiqueText">Mon accompagnement ne se substitue pas à un suivi médical et toute gestion d’un éventuel traitement médicamenteux ne rentre pas dans ma zone de responsabilité. </p>
