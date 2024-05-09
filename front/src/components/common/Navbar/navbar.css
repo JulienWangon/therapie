@@ -12,22 +12,14 @@
   margin-bottom: 0.1em;
 }
 
-.offcanvas-title {
-  color: #5A1D3E;
-  padding: 0.8rem;
-  font-size: 1.5rem;
-  font-family: "Pathway Gothic One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
 .navbar-nav:last-child {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #B8A99E;
 }
 
 .navItem {
   display: flex;
   align-items: center;
-  border-top: 1px solid white;
+  border-top: 1px solid #B8A99E;
 }
 
 .navItem:first-child {
@@ -35,16 +27,16 @@
 }
 
 .navLink {
-  transition: color 0.3s ease; /* Effet de transition douce */
+  transition: color 0.3s ease; 
 }
 
 .navLink:hover {
-  color: #13868C; /* Couleur des liens au survol (rouge) */
+  color: #007A8D; 
 }
 
 .navItem a {
   text-decoration: none;
-  color: #5A1D3E;
+  color: #571D3E;
   font-size: 1.3rem;
   font-family: "Pathway Gothic One", sans-serif;
   font-weight: 400;
@@ -54,7 +46,7 @@
 }
 
 .offcanvas-body, .offcanvas-header, .canvas-footer {
-  background-color: #F6EDE8;
+  background-color: #F4F1E4;
 }
 
 .offcanvas-header {
@@ -69,7 +61,7 @@
 .cardNavbar {
   width: fit-content;
   height: fit-content;
-  background-color: #F6EDE8;
+  background-color: #F4F1E4;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -93,7 +85,7 @@
   font-style: normal;
   font-size: 1rem;
   margin-left: 0.8em;
-  color: #5A1D3E;
+  color: #571D3E;
 }
 
 .phoneIcone, .hoursIcone {
@@ -105,10 +97,10 @@
 }
 
 .fa-phone, .fa-clock {
-  color:#5A1D3E; 
+  color:#571D3E; 
 }
 
 
 .hoursInfo {
-  border-top: 1px solid white;
+  border-top: 1px solid #B8A99E;
 }

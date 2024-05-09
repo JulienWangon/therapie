@@ -4,13 +4,13 @@
 .contactHeader {
   display: flex;
   flex-direction: column;
-  color: white;
+  color: #F4F1E4;
   font-family: "Alice", serif;
   font-size: 0.9em;
 }
 
 .phone {
   text-decoration: none;
-  color: white;
+  color: #F4F1E4;
   margin-bottom: 0.5em;
 }
