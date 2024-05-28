@@ -47,3 +47,7 @@
   display: flex;
   margin-top: 5em;
 }
+
+.cookieText {
+  color: #333333;
+}
