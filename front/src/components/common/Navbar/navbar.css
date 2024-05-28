@@ -72,12 +72,27 @@
   padding: 0.8em;
 }
 
-.phoneInfo, .hoursInfo {
-  display: flex;
-  padding: 0.8em;
+.rdvBtncontainer {
+  background-color: #F4F1E4;
+  padding: 1.6em;
+  padding-left: 0.8em;
 }
 
-.phoneText, .hoursText {
+.rdvNav {
+  color:#F4F1E4;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 0.5em;
+  background-color: #571D3E;
+  margin-left: 0.5em;
+}
+
+.phoneInfo, .hoursInfo {
+  display: flex;
+  padding: 1em;
+}
+
+.phoneText {
   display: flex;
   flex-direction: column;
   font-family: "Pathway Gothic One", sans-serif;
@@ -91,8 +106,8 @@
 .phoneIcone, .hoursIcone {
   width: 8%;
   display: flex;
-  justify-content: center; /* Centrage horizontal */
-  align-items: center;     /* Centrage vertical */
+  justify-content: center; 
+  align-items: center;     
 
 }
 
@@ -100,7 +115,36 @@
   color:#571D3E; 
 }
 
-
+.hoursText {
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 1rem;
+  margin-left: 0.8em;
+  color: #571D3E;
+}
 .hoursInfo {
+  display:flex;
+  align-items: center;
   border-top: 1px solid #B8A99E;
+}
+
+.listHour {
+  list-style: none;
+  padding-left: 0.8em;
+}
+
+.hourItem {
+  color: #571D3E;
+  font-family: "Pathway Gothic One", sans-serif;
+}
+
+.canvas-footer {
+  padding: 0;
+  padding-top: 2em;
+}
+
+
+.permTel {
+  margin-left: 0.8em;
+  color: #571D3E;
+  font-family: "Pathway Gothic One", sans-serif;
 }

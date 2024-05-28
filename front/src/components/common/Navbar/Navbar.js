@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './navbar.css';
 
 import SocialMedia from '../SocialMedia/SocialMedia';
+import Button from '../Button/Button';
 
 const Navbar = () => {
 
@@ -10,10 +11,10 @@ const Navbar = () => {
 
     const links = [
         { text: "ACCUEIL", url: "/accueil" },
-        { text: "MON PARCOURS", url: "/mon-parcours" },
-        { text: "THERAPIE SYSTEMIQUE", url: "/therapie-systemique" },
+        { text: "QUI SUIS-JE ?", url: "/mon-parcours-professionnel" },
+        { text: "THERAPIE BRÈVE SYSTEMIQUE", url: "/therapie-breve-systemique" },
         { text:"CONSTELLATIONS FAMILIALES", url:"/constellations-familiales"},
-        { text: "PSYCHOCORPORELLE", url: "/therapie-psychocorporelle" },
+       
     ];
     
     const handleNavigate = (url) => {
@@ -55,36 +56,35 @@ const Navbar = () => {
                             ))}
                       </ul>
                     
-                      <SocialMedia className="cardNavbar"/>                      
+                      <SocialMedia className="cardNavbar"/> 
+                      <div className="rdvBtncontainer">
+                            <Button text="Prendre rendez-vous" className="rdvNav"/>
                   </div>
-                  <div className="canvas-footer">
-                      <div className="infoContainer">
-                          <div className="phoneInfo">
-                              <div className="phoneIcone">
-                                  <i className="fa fa-2x fa-phone"></i>
-                              </div>       
-                              <div className="phoneText">
-                                  <span>Tel</span>
-                                  <span>07.60.45.44.90</span>
-                              </div>
-                          </div>
-                          <div className="hoursInfo">
-                              <div className="hoursIcone">
-                              <i className="fa fa-2x fa-clock"></i>
-                              </div>       
-                              <div className="hoursText">
-                                  <span>Horaires</span>
-                                  <span>Lun-Sam: 09H-18H</span>
-                              </div>
-                          </div>
-                      </div>
+                    <div className="canvas-footer">
+                        <div className="infoContainer">
+                            <div className="hoursContainer">
+                                    <div className="hoursInfo">  
+                                        <i className="fa fa-2x fa-clock"></i>
+                                        <span className="hoursText">Horaires</span> 
+                                    </div>
+                                    <div className="hoursList">
+                                        <ul className="listHour">
+                                            <li className="hourItem">Lundi, Mardi, Jeudi : 09h-13h; 14h-18h </li>
+                                            <li className="hourItem">Mercredi : 08h-12h</li>
+                                            <li className="hourItem">Vendredi : 14h-20h</li>
+                                        </ul>
+                                    </div>
+                            </div>
+                            <div className="permTel">
+                                <p>Rendez-vous téléphonique gratuit et sans engagement: <a href="https://www.crenolibre.fr/prendre-rdv/89991_psychopraticienne">Ici</a></p>
 
+
+                            </div>
+                        </div>
+                    </div>                     
                   </div>
-
               </div>
-
           </div>
-
       </nav>
     );
 };
