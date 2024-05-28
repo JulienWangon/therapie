@@ -1,7 +1,19 @@
 
 .servicesWrapper {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+}
+
+.servicesWrapper > :first-child {
+  margin-top: 0.2em;
+}
+
+
+.servicesWrapper > :last-child {
+  margin-bottom: 2em;
+}
+
+.servicesWrapper > :nth-child(2) .serviceName {
+ margin-top: 2em;
 }
