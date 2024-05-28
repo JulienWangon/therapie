@@ -24,6 +24,10 @@
   margin: 0.5em;
 }
 
+.blueIcone {
+  background-color: #007A8D;
+}
+
 .containerOne:hover {
   background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   transition-duration: .3s;
