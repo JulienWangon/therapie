@@ -7,7 +7,6 @@ import { ServicesProvider } from './context/ServicesContext';
 
 import Home from './pages/Home/Home';
 import MonParcours from './pages/MonParcours/MonParcours';
-import PsychoCorporelle from './pages/PsychoCorporelle/PsychoCorporelle';
 import TherapieSystemique from './pages/TherapieSystemique/TherapieSystemique';
 import ConstellationsFamiliales from './pages/ConstellationsFamilliales/ConstellationsFamiliales';
 
@@ -28,10 +27,9 @@ function App() {
                     </ContactInfoProvider>
                 } />
                 
-                <Route path="/mon-parcours" element={<MonParcours />} />
-                <Route path="/therapie-systemique" element={<TherapieSystemique />} />
+                <Route path="/mon-parcours-professionnel" element={<MonParcours />} />
+                <Route path="/therapie-breve-systemique" element={<TherapieSystemique />} />
                 <Route path="/constellations-familiales" element={<ConstellationsFamiliales/>}/>
-                <Route path="/therapie-psychocorporelle" element={<PsychoCorporelle />} />
             </Routes>
         </BrowserRouter>
       
