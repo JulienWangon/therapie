@@ -1,3 +1,12 @@
+.formationWrapper {
+  background-color: #DADADA;
+}
+
+.formationTitle {
+  padding-top: 1.5em;
+}
+
+
 .logoDiplomeWrapper {
   width: 100%;
   text-align: center;

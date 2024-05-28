@@ -19,8 +19,9 @@ const DiplomeSection = () => {
 
     return (
 
-      <>
-        <h2>Mes formations</h2>
+      <div className="formationWrapper">
+
+        <h2 className="formationTitle">Mes formations</h2>
         <ul className="diplomeList">
             {diplomes.map((diplome) => (
                 <DiplomeList
@@ -35,16 +36,17 @@ const DiplomeSection = () => {
           <div className="logoDiplomeWrapper">
               <div className="logoLine1">
                   <img className="logo1" src={syprene} alt="université Paris 8"/>
-                  <img className="logo2" src={saclay} alt="université Paris Saclay"/>
+                  <img className="logo4" src={lact} alt="systemic practice research network"/>
+                  
               </div>
               <div className="logoLine1">
                   <img className="logo3" src={paris8} alt="université Paris 8"/>
-                  <img className="logo4" src={lact} alt="systemic practice research network"/>
-              </div>
-              <button type="button" className="parcoursBtn">Mon parcours <i className="fas fa-arrow-right"></i></button>        
+                  <img className="logo2" src={saclay} alt="université Paris Saclay"/>
+                  
+              </div>      
           </div>
                
-      </>
+      </div>
 
 
 
