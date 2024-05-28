@@ -3,11 +3,11 @@
 footer {
  
   background-color: white;
-  background-image: url('../../../../src//assets//img/logoFooter.webp');
+  background-image: url('../../../../src//assets/img/translogo40.webp');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #F6EDE8;
+  
 }
 
 .contactTopFooter {
@@ -20,9 +20,13 @@ footer {
 }
 
 .adressFooter, .phoneFooter {
-  color: #5a1d3e;
+  color: #007A8D;
   font-family: "Open Sans", sans-serif;
   font-size: 0.8rem;
+}
+
+.phoneFooter > i {
+  color: #007A8D;
 }
 
 .adressSpan, .phoneNumFooter {
@@ -31,7 +35,7 @@ footer {
 
 .phoneNumFooter {
   text-decoration: none;
-  color: #5a1d3e;
+  color: #007A8D;
 }
 
 .topfooterItem {
@@ -49,14 +53,14 @@ footer {
 
 .serviceListFooter, .contactListFooter {
   list-style: none;
-  color: #5a1d3e;
+  color: #007A8D;
   padding: 0;
   
 }
 
 .serviceLien, .parcoursFooter {
   text-decoration: none;
-  color: #5a1d3e;
+  color: #007A8D;
   margin-left: 0.5em;
 }
 
@@ -65,7 +69,7 @@ footer {
 }
 
 .serviceFooterTitle, .contactFooterTitle {
-  color: #5a1d3e;
+  color: #007A8D;
   font-size: 0.8rem;
   font-weight: 600;
   font-family: "Open Sans", sans-serif;
@@ -105,16 +109,16 @@ footer {
 }
 
 .legale {
-  color: #5a1d3e;
+  color: #007A8D;
   font-size: 0.6rem;
   padding: 0.3em;
 }
 
 .cookieBtn {
   border: none;
-  background-color: #F6EDE8;
+  background-color: white;
   font-size: 0.6rem;
-  color: #571d3e;
+  color: #007A8D;
   text-decoration: underline;
 }
 
@@ -135,12 +139,12 @@ footer {
   transform: translateX(-50%); 
   width: 50%;
   height: 1px; 
-  background-color: #5a1d3e;
+  background-color: #007A8D;
 }
 
 .copyRight{text-align: center;}
 
 .copyrightText {
-  color: #5a1d3e;
+  color: #333333;
   font-size: 0.5rem;;
 }
