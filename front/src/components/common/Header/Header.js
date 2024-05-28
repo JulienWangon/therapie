@@ -24,7 +24,7 @@ const Header = () => {
 
         <div className="bottomHeader">
             <Button
-                text="contact"
+                text="Contact"
                 className="contactBtn"
                 type="button"
                 colorStyle="whiteBtn"
