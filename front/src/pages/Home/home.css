@@ -2,15 +2,21 @@
 
 
 body {
-  background-color: #F4F1E4;
+  background-color: white;
+}
+
+p {
+  font-size: 1rem;
 }
 
 .titleWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  width: 100%;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  background-color: #F4F1E4;
 }
 
 .homMain {
@@ -38,6 +44,10 @@ section {
   align-items: center;
 }
 
+.firstSection {
+  background-color: #F4F1E4;
+}
+
 .topLogo, .bodyLogo, .footerLogo {
   display: flex;
   flex-direction: column;
@@ -63,6 +73,7 @@ section {
 .pourText {
   text-align: center;
   font-size: 0.8rem;
+  color: #333333;
 }
 
 .spaceLogo {
@@ -74,7 +85,7 @@ section {
 .logoWrapper {
   width: 95vw;
   margin: auto;
-  background-image: url('../../assets/img/translogo.webp');
+  background-image: url('../../assets/img/translogo40.webp');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -82,6 +93,7 @@ section {
 
 .ouItem {
   font-size: 0.8rem;
+  color: #444444;
 }
 
 .commentWrapper {
@@ -98,6 +110,7 @@ section {
   text-align: justify;
   font-size: 0.9rem;
   font-weight: 400;
+  color: #333333;
 }
 
 
@@ -137,7 +150,7 @@ blockquote {margin: 0;}
   width: 85vw;
   font-size: 0.8rem;
   text-align: center;
-  color: #5A1D3E;
+  color: #571D3E;
   font-family: "Open Sans", sans-serif;
   font-weight: 00;
   margin-top: 0.5em;
@@ -162,7 +175,7 @@ blockquote {margin: 0;}
 }
 
 .topSecondSection {
-  background-color: white;
+  background-color: #F4F1E4;
   width: 100vw;
   height: 50%;
 }
@@ -170,13 +183,13 @@ blockquote {margin: 0;}
 .bottomSecondSection {
   width: 100vw;
   height: 50%;
-  background-color: #F6EDE8;
+  background-color: white;
 }
 
 h2 {
   padding: 0.5em;
   font-family: "Averia Libre", system-ui;
-  color: #5A1D3E;
+  color: #571D3E;
   font-size: 1.2rem;
   text-align: center;
   margin-top: 2em;
@@ -189,20 +202,25 @@ h2 {
   margin-top: 2em
 }
 
+strong {
+  color: #007A8D
+}
+
 .textInfoCard {
-  margin-top: 2em;
+  margin-top: 1.3em;
   text-align: center;
-  color: #571d3a;
+  color: #333333;
   font-size: 0.9em;
   padding: 1em;
 }
 
 .rdvBtn  {
     color: white;
-    background-color: #571d3a;
+    background-color: rgba(87, 29, 62, 0.8);
+    border: none;
     border-radius: 10px;
     padding: 0.6em;
-    margin-top: 1em;
+   
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
 }
@@ -217,32 +235,35 @@ h2 {
 .socialBody {
   display: flex;
   justify-content: center;
+  color: #007A8D;
 }
 
 .portrait {
   border-radius: 50%;
-  border: 2px solid green;
+  border: 2px solid #007A8D;
   width: 10rem;
   position: absolute; 
   top: 50%; 
   transform: translateY(-50%); 
   z-index: 10; 
+  
 }
 
 .infoText {
   font-size: 0.9rem;
-  color: #571d3a;
+  color: #333333;
   font-family: "Open Sans", sans-serif;
   padding: 1em;
 }
 
 .parcoursBtn {
-  background-color: #13868C;
+  background-color: rgba(0, 122, 141, 0.8);
   color: white;
   border: none;
   border-radius: 10px;
   padding: 0.7em;
-  margin-top: 2em;
+  margin-top: 1em;
+  margin-bottom: 2em;
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
 }
@@ -268,10 +289,18 @@ h2 {
   width: 100vw;
 }
 
+.thirdSection > .rdvBtn {
+  margin-bottom: 2em;
+}
+
 /*QUATRIEME SECTION*/
+.fourSection {
+  background-color: #F4F1E4;
+}
+
 .rdvBtn {
   color: white;
-  margin-bottom: 2em;
+  margin-bottom: em;
 }
 
 .tarifText {
@@ -283,7 +312,7 @@ h2 {
 .tarifExplication {
   font-family: "Open Sans", sans-serif;
   text-align: center;
-  color:#571d3a;
+  color:#571D3E;
   font-size: 0.9rem;
   padding-left: 1em;
   padding-right: 1em;
@@ -294,12 +323,13 @@ h2 {
   font-family: "Open Sans", sans-serif;
   font-size: 0.8rem;
   padding: 1.2em;
-  color:#571d3a;
+  color:#571D3E;
 }
 
 .neovieTitle {
   font-family: "Averia Libre", system-ui;
   font-size: 1.2rem;
+  color: #571D3E;
 }
 
 .neovieLogo {
@@ -311,8 +341,8 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1em;
-  
+  margin-top: 2em;
+  padding-bottom: 2em;
   width: 95vw;
 }
 .impotCheque {
@@ -339,7 +369,7 @@ h2 {
 }
 
 .ethiqueSection {
-  background-color: white;
+  background-color: #F4F1E4;
 }
 
 .ethiqueImg {

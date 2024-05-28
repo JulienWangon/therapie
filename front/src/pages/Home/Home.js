@@ -115,7 +115,7 @@ const Home = () => {
             </section>
             <section className="secondSection">
                 <div className="topSecondSection">
-                    <h2 className="h2SecondSection">Un accompagnement pour créer le changement et retrouver votre autonomie.</h2>
+                    <h2 className="h2SecondSection">Un accompagnement pour passer le cap du changement et retrouver votre autonomie.</h2>
 
                     <div className="infoCardWrapper">
                         <InfoCard imageSrc={logo1} alt='à définir' primaryText='Séance individuelle'/>
@@ -136,8 +136,8 @@ const Home = () => {
                             Quelque soit votre besoin, vous pouvez me contacter initialement par téléphone :
                             j’effectue régulièrement des permanences téléphoniques.
                         </p>
-
-                        <button type="button" className="rdvBtn">Prendre rendez-vous</button>
+                      
+                        <button type="button" className="rdvBtn">Prendre rendez-vous <i className="fas fa-arrow-right"></i></button>                      
                     </div>
 
                 </div>
@@ -146,6 +146,8 @@ const Home = () => {
  
                 <div className="bottomSecondSection">
                     <div className="textPhotoWrapper">
+                        <button type="button" className="parcoursBtn">Qui suis-je <i className="fas fa-arrow-right"></i></button>  
+
                         <p>
                             Je suis <strong>psychopraticienne</strong> et je vous accompagne dans un cadre <strong>confidentiel</strong> et <strong>bienveillant</strong>. 
                         </p>
@@ -161,14 +163,14 @@ const Home = () => {
                             à la <strong>famille</strong>, à la <strong>grossesse</strong>, à la <strong>naissance d'un enfant</strong>, à son <strong>éducation</strong>, au "métier" de parent(s).
                         </p>
                     </div>
-                    <SocialMedia className="socialBody"/>
+                    <SocialMedia className="socialBody" colorStyleIcone="blueIcone"/>
                     <DiplomeSection/>
                 </div>
             </section>
             <section className="thirdSection">
                 <h2>Oser le changement, révélez votre potentiel</h2>
 
-                <p className="serviceText">Un voyage de transformation à travers:</p>
+                <p className="serviceText">Un voyage de transformation à travers :</p>
 
                 <SectionServices/>
 
@@ -189,7 +191,7 @@ const Home = () => {
                 <h2>Tarifs*</h2>
 
                 <p className="tarifText">Séance  individuelle: 60€ à 100€ la séance.</p>
-                <p className="tarifText">Séance de couple ou en famille: 100€ la séance.</p>
+                <p className="tarifText">Séance de couple ou en famille: 80€ la séance.</p>
                 <p className="tarifExplication">La durée des séances peut varier de 1h à 2h et elles s’effectuent une à deux fois par mois en fonction des besoins. </p>
                 <p className="tarifExplication">La thérapie brève se fait généralement sur une moyenne de 10 séances par problématique</p>
 
@@ -217,11 +219,12 @@ const Home = () => {
             <section className="ethiqueSection">
                 <h2>Ethique professionnelle</h2>
 
-                <p className="ethiqueText">En conformité avec le code de déontologie de la FF2P (Fédération Française de Psychanalyse et de Psychothérapie) à laquelle je suis adhérente , je m’engage à respecter le <strong>secret professionnel</strong> et la <strong>confidentialité</strong> de nos échanges.</p>
+                <p className="ethiqueText">Je m’engage à respecter le <strong>secret professionnel</strong> et la <strong>confidentialité</strong> de nos échanges.</p>
+                <p className="ethiqueText">Je m’autorise à déroger à cette règle avec votre accord en cas de danger possible pour vous, dans le cadre d’éventuelles violences que vous subiriez ou si vos difficultés sont en dehors de mon champ de compétences.</p>
                
                 <img className="ethiqueImg" src={ethique} alt="livre avec un cadenas"/>
 
-                <p className="ethiqueText">Je m’autorise à déroger à cette règle avec votre accord en cas de danger possible pour vous, dans le cadre d’éventuelles violences que vous subiriez ou si vos difficultés sont en dehors de mon champ de compétences.</p>
+                
                 <p className="ethiqueText">Les données transmises ne sont utilisées qu’à visée d’orientation et réduites au strict nécessaire.</p>
                 <p className="ethiqueText">Mon accompagnement ne se substitue pas à un suivi médical et toute gestion d’un éventuel traitement médicamenteux ne rentre pas dans ma zone de responsabilité. </p>
                 <p className="ethiqueText">Je soumets ma pratique à une supervision régulière de mon travail à des superviseurs expérimentés. Cette supervision m’est indispensable selon moi et elle m’aide à être dans une relation thérapeutique saine, pour mieux accompagner mes consultants selon leur problèmatique et les résonnances chez moi.</p>
