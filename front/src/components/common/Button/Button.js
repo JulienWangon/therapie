@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Children } from 'react';
 
 import './button.css'
 
-const Button = ({ text, className, type="button", colorStyle, onClick, disabled = false }) => {
+const Button = ({ text, className, type="button", colorStyle, onClick, disabled = false, children}) => {
   return (
     <button
         type={type}
@@ -11,7 +11,7 @@ const Button = ({ text, className, type="button", colorStyle, onClick, disabled 
         disabled={disabled}    
     >
         {text}
-      
+      {children}
     </button>
   );
 };
