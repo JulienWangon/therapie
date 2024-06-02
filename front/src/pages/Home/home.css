@@ -293,6 +293,13 @@ strong {
   margin-bottom: 2em;
 }
 
+.introChangement {
+  padding: 1em;
+  text-align: center;
+  margin-top: 2em;
+  font-family: "Open Sans", sans-serif;
+}
+
 /*QUATRIEME SECTION*/
 .fourSection {
   background-color: #F4F1E4;

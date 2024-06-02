@@ -101,7 +101,7 @@ const Home = () => {
 
                 <div className="commentWrapper">
                     <span className="spanTitle">Comment ?</span>
-                    <p className="comment">Mon approche est souvent ciblée, concrète et limitée dans le temps, avec un accent mis sur la résolution de problèmes spécifiques plutôt que sur une exploration approfondie des mécanismes psychologiques.</p>
+                    <p className="comment">Mon approche est ciblée, concrète et limitée dans le temps, avec un accent mis sur la résolution de problèmes spécifiques. Nous nous concentrons sur les interactions et les dynamiques présentes au sein de votre système relationnel.</p>
                 </div>
 
                 <div className="citationWrapper">
@@ -120,7 +120,7 @@ const Home = () => {
                     <div className="infoCardWrapper">
                         <InfoCard imageSrc={logo1} alt='à définir' primaryText='Séance individuelle'/>
                         <InfoCard imageSrc={logo2} alt='à définir' primaryText='Thérapie de couple'/>
-                        <InfoCard imageSrc={logo3} alt=" à définir" primaryText='Thérapie familiale' secondaryText='Soutien à la parentalité'/>
+                        <InfoCard imageSrc={logo3} alt=" à définir" primaryText='Thérapie en famille,' secondaryText='soutien à la parentalité'/>
                         <InfoCard imageSrc={logo4} alt=" à définir" primaryText='Ateliers collectifs'/>
                     </div>
 
@@ -152,15 +152,15 @@ const Home = () => {
                             Je suis <strong>psychopraticienne</strong> et je vous accompagne dans un cadre <strong>confidentiel</strong> et <strong>bienveillant</strong>. 
                         </p>
                         <p>
-                            En créant un espace d'écoute et de parole sécurisant, je vous aide à explorer vos  émotions, 
-                            à comprendre vos comportements et à <strong>trouver vos propres solutions</strong> pour <strong>surmonter vos difficultés</strong>.
+                            En créant un espace d'écoute et de parole sécurisant, je vous aide à <strong>explorer vos  émotions</strong>, 
+                            à <strong>comprendre vos comportements</strong> et à <strong>trouver vos propres solutions</strong> pour <strong>surmonter vos difficultés</strong>.
                         </p>
                         <p>
                             Je suis également sage-femme et c'est tout naturellement que mon activité professionnelle a évolué vers le domaine de la santé mentale et du bien-être.
                         </p>
                         <p>
                             Je suis donc plus spécialisée dans tout ce qui touche à la <strong>femme</strong>, au <strong>couple</strong>, aux <strong>relations amoureuses</strong>, 
-                            à la <strong>famille</strong>, à la <strong>grossesse</strong>, à la <strong>naissance d'un enfant</strong>, à son <strong>éducation</strong>, au "métier" de parent(s).
+                            à la <strong>famille</strong>, à la <strong>grossesse</strong>, à la <strong>naissance d'un enfant</strong>, à son <strong>éducation</strong>, au <strong>"métier" de parent(s)</strong>.
                         </p>
                     </div>
                     <SocialMedia className="socialBody" colorStyleIcone="blueIcone"/>
@@ -168,6 +168,13 @@ const Home = () => {
                 </div>
             </section>
             <section className="thirdSection">
+                <div className="introChangement">
+                    <p className='changementText'>Vous souhaitez régler une difficulté avec vous-même, vos proches, au sein de votre famille ou dans votre milieu professionnel ?</p>
+                    <p className='changementText'>Vous vivez difficilement une période de changement.s personnel.s et/ou professionnel.s ?</p>
+                    <p className='changementText'>Vous traversez un moment de vie qui impacte vos corps (physique, émotionnel, psychique) ?</p>
+                    <p className='changementText'>Vous ressentez des tensions, des douleurs chroniques ou soudaines, du stress, de l'anxiété, une perte de confiance en vous et vous désirez améliorer cette situation ?</p>
+                    <p className='changementText'>Vous voulez mieux vous connaître, explorer vos ressentis, vos possibilités, découvrir vos pleins potentiels et vous avez à cœur de vous donner toutes les chances pour réaliser vos projets ?</p>
+                </div>
                 <h2>Oser le changement, révélez votre potentiel</h2>
 
                 <p className="serviceText">Un voyage de transformation à travers :</p>
@@ -180,8 +187,9 @@ const Home = () => {
                <div className="planteWrapper">
                     <img className="planteImg" src={plante} alt="plantation plante"/>
                     <div className="planteText">
-                        <p className="serviceText">Je suis également <strong>sage-femme</strong> et c'est tout naturellement que mon activité professionnelle à évolué vers le domaine de la <strong>santé mentale</strong> et du <strong>bien-être</strong>.</p>
-                        <p className="serviceText">Je suis donc plus spécialisée dans tout ce qui touche à la <strong>femme</strong>, au <strong>couple</strong>, aux <strong>relations amoureuses</strong>, à la <strong>famille</strong>, à la <strong>grossesse</strong>, à la <strong>naissance</strong> d'un enfant, à son <strong>éducation</strong>, au "métier" de <strong>parent(s)</strong>.</p>
+                        <p className="serviceText">Mon approche vous encourage à devenir les acteurs principaux de votre parcours de guérison, en cultivant et exploitant vos propres forces et capacités d'adaptation ; et en valorisant vos ressources propres.</p>
+                        <p className="serviceText">Je vous guide à travers un processus de découverte et d'utilisation de vos ressources internes pour surmonter les défis et atteindre vos objectifs.</p>
+                        <p className="serviceText">Je vous offre une perspective profondément respectueuse de votre autonomie individuelle. Nous mettons ainsi en lumière votre résilience naturelle et votre capacité à instaurer des changements positifs dans votre vie.</p>
                      </div>
                </div>
 
@@ -221,11 +229,10 @@ const Home = () => {
 
                 <p className="ethiqueText">Je m’engage à respecter le <strong>secret professionnel</strong> et la <strong>confidentialité</strong> de nos échanges.</p>
                 <p className="ethiqueText">Je m’autorise à déroger à cette règle avec votre accord en cas de danger possible pour vous, dans le cadre d’éventuelles violences que vous subiriez ou si vos difficultés sont en dehors de mon champ de compétences.</p>
-               
+                <p className="ethiqueText">Dans ce cas, <strong className="strongViolet">les données transmises</strong> ne sont utilisées qu’à visée d’orientation et réduites au <strong className="strongViolet">strict nécessaire</strong>.</p>
+                
                 <img className="ethiqueImg" src={ethique} alt="livre avec un cadenas"/>
 
-                
-                <p className="ethiqueText">Les données transmises ne sont utilisées qu’à visée d’orientation et réduites au strict nécessaire.</p>
                 <p className="ethiqueText">Mon accompagnement ne se substitue pas à un suivi médical et toute gestion d’un éventuel traitement médicamenteux ne rentre pas dans ma zone de responsabilité. </p>
                 <p className="ethiqueText">Je soumets ma pratique à une supervision régulière de mon travail à des superviseurs expérimentés. Cette supervision m’est indispensable selon moi et elle m’aide à être dans une relation thérapeutique saine, pour mieux accompagner mes consultants selon leur problèmatique et les résonnances chez moi.</p>
                 <p className="ethiqueText">Je m’engage également à une formation continue en participant fréquemment à des stages, des séminaires, des ateliers et des perfectionnements professionnels.</p>
