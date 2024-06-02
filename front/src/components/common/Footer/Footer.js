@@ -20,11 +20,11 @@ const Footer = () => {
         <div className="contactTopFooter">
           <div className="adressFooter topfooterItem">
             <i className="fa-solid fa-location-dot"></i>
-            <span className="adressSpan">28, Rue des Dépravés 57000 Metz</span>
+            <span className="adressSpan">35 place Saint Maximin, 57070 Metz</span>
           </div>
           <div className="phoneFooter topfooterItem">
             <i className="fa-solid fa-phone"></i>
-            <a className="phoneNumFooter" href="0725467895">0725467895</a>
+            <a className="phoneNumFooter" href="0760454490">0760454490</a>
           </div>
           <div className="contactBtnFooter topfooterItem">
             <Button text="Contact" className="blueBtn contactBtnFooter" onClick={toggleModal}/>
