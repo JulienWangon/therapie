@@ -58,7 +58,7 @@ const Navbar = () => {
                     
                       <SocialMedia className="cardNavbar"/> 
                       <div className="rdvBtncontainer">
-                            <Button text="Prendre rendez-vous" className="rdvNav"/>
+                            <Button className="rdvNav"><a className="rdvLink" href="https://www.crenolibre.fr/prendre-rdv/89991_psychopraticienne">Prendre rendez-vous</a></Button>
                   </div>
                     <div className="canvas-footer">
                         <div className="infoContainer">
@@ -76,9 +76,7 @@ const Navbar = () => {
                                     </div>
                             </div>
                             <div className="permTel">
-                                <p>Rendez-vous téléphonique gratuit et sans engagement: <a href="https://www.crenolibre.fr/prendre-rdv/89991_psychopraticienne">Ici</a></p>
-
-
+                                <p classNam="permTelText">Rendez-vous téléphonique gratuit et sans engagement: <a className="permLien" href="https://www.crenolibre.fr/prendre-rdv/89991_psychopraticienne">Ici</a></p>
                             </div>
                         </div>
                     </div>                     

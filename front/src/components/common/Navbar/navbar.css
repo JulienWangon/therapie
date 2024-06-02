@@ -85,6 +85,12 @@
   padding: 0.5em;
   background-color: #571D3E;
   margin-left: 0.5em;
+  border: none;
+}
+
+.rdvLink {
+  color: #F4F1E4;
+  text-decoration: none;
 }
 
 .phoneInfo, .hoursInfo {
@@ -144,7 +150,14 @@
 
 
 .permTel {
+  text-decoration: none;
   margin-left: 0.8em;
   color: #571D3E;
   font-family: "Pathway Gothic One", sans-serif;
+}
+
+.permLien {
+  text-decoration: none;
+  color: #571D3E;
+  text-decoration: underline;
 }
